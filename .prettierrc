@@ -1,0 +1,12 @@
+{
+    "printWidth": 145,
+    "useTabs": false,
+    "braceStyle": "1tbs",
+    "vueIndentScriptAndStyle": true,
+    "trailingComma": "all",
+    "trailingCommaPHP": "php7.2",
+    "overrides": [
+        { "files": "*.html", "options": { "parser": "html" } },
+        { "files": "*.vue", "options": { "parser": "vue" } }
+    ]
+}
