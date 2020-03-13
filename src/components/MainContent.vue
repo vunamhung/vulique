@@ -1,20 +1,13 @@
 <template>
     <div class="main-content flex-grow-1">
-        <div class="header">
-            <div class="container-fluid">
-                <div class="header-body">
-                    <div class="row align-items-end">
-                        <div class="col">
-                            <h6 class="header-pretitle">Overview</h6>
-                            <h1 class="header-title mb-0">Dashboard</h1>
-                        </div>
-                        <div class="col-auto">
-                            <b-button variant="primary"> <feather size="13" type="target"></feather> Create report</b-button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <v-header title="Dashboard" pre-title="Overview">
+            <template slot="right">
+                <b-button variant="primary">
+                    <feather size="13" type="target"></feather>
+                    Create report
+                </b-button>
+            </template>
+        </v-header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl">
@@ -239,9 +232,11 @@
 
 <script>
     import LineChart from "@/components/LineChart";
+    import VHeader from "@/components/VHeader";
+
     export default {
         name: "MainContent",
-        components: { LineChart },
+        components: { VHeader, LineChart },
         data() {
             return {
                 // Initial value
