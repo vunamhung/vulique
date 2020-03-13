@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="d-flex">
+    <div id="app">
         <LeftSidebar />
         <MainContent />
     </div>

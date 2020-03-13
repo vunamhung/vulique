@@ -1,14 +1,14 @@
 <template>
-    <div class="main-content flex-grow-1">
+    <div class="main-content">
         <v-header title="Dashboard" pre-title="Overview">
-            <template slot="right">
+            <template slot="toolbar">
                 <b-button variant="primary">
                     <feather size="13" type="target"></feather>
                     Create report
                 </b-button>
             </template>
         </v-header>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl">
                     <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
