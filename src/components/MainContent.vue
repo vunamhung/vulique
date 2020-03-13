@@ -11,12 +11,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <b-card class="shadow bg-conner-1" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Value</h6>
                                 <span class="h2 mb-0">$24,500</span>
-                                <span class="badge badge-soft-success mt-n1">+3.5%</span>
+                                <span class="badge badge-soft-success mt-n1 ml-1">+3.5%</span>
                             </div>
                             <div class="col-auto">
                                 <feather class="text-muted" size="20" type="dollar-sign"></feather>
@@ -25,7 +25,7 @@
                     </b-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <b-card class="shadow bg-conner-2" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Total hours</h6>
@@ -38,7 +38,7 @@
                     </b-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <b-card class="shadow bg-conner-3" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Exit %</h6>
@@ -67,7 +67,7 @@
                     </b-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <b-card class="shadow bg-conner-1" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
