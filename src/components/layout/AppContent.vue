@@ -168,7 +168,11 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                                            <img
+                                                class="avatar-img rounded-circle"
+                                                src="../../assets/img/avatars/profiles/avatar-1.jpg"
+                                                alt="..."
+                                            />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -182,7 +186,11 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                                            <img
+                                                class="avatar-img rounded-circle"
+                                                src="../../assets/img/avatars/profiles/avatar-2.jpg"
+                                                alt="..."
+                                            />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -196,7 +204,11 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                                            <img
+                                                class="avatar-img rounded-circle"
+                                                src="../../assets/img/avatars/profiles/avatar-3.jpg"
+                                                alt="..."
+                                            />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -215,14 +227,14 @@
 </template>
 
 <script>
-    import LineChart from "@/components/LineChart";
-    import VHeader from "@/components/VHeader";
-    import SparklineChart from "@/components/SparklineChart";
-    import VCard from "@/components/VCard";
-    import VCardNoBody from "@/components/VCardNoBody";
+    import LineChart from "@/components/chart/LineChart";
+    import SparklineChart from "@/components/chart/SparklineChart";
+    import VCard from "@/components/ui/VCard";
+    import VHeader from "@/components/ui/VHeader";
+    import VCardNoBody from "@/components/ui/VCardNoBody";
 
     export default {
-        name: "MainContent",
+        name: "AppContent",
         components: { VCardNoBody, VCard, SparklineChart, VHeader, LineChart },
         data() {
             return {

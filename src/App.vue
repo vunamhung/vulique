@@ -1,19 +1,19 @@
 <template>
     <div id="app">
-        <LeftSidebar />
-        <MainContent />
+        <AppSidebar />
+        <AppContent />
     </div>
 </template>
 
 <script>
-    import LeftSidebar from "@/components/LeftSidebar";
-    import MainContent from "@/components/MainContent";
+    import AppSidebar from "@/components/layout/AppSidebar";
+    import AppContent from "@/components/layout/AppContent";
 
     export default {
         name: "App",
         components: {
-            MainContent,
-            LeftSidebar,
+            AppContent,
+            AppSidebar,
         },
     };
 </script>
