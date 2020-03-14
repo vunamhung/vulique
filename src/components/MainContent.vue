@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow bg-conner-1" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card class="shadow bg-conner-1">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Value</h6>
@@ -22,10 +22,10 @@
                                 <feather class="text-muted" size="20" type="dollar-sign"></feather>
                             </div>
                         </div>
-                    </b-card>
+                    </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow bg-conner-2" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card class="shadow bg-conner-2">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Total hours</h6>
@@ -35,10 +35,10 @@
                                 <feather class="text-muted" size="20" type="briefcase"></feather>
                             </div>
                         </div>
-                    </b-card>
+                    </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow bg-conner-3" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card class="shadow bg-conner-3">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Exit %</h6>
@@ -48,10 +48,10 @@
                                 <sparkline-chart :chart-data="chartData" />
                             </div>
                         </div>
-                    </b-card>
+                    </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow bg-conner-4" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card class="shadow bg-conner-4">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
@@ -61,17 +61,17 @@
                                 <feather class="text-muted" size="20" type="clock"></feather>
                             </div>
                         </div>
-                    </b-card>
+                    </v-card>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card>
                         <line-chart :chart-data="chartData" :chart-options="chartOptions" />
-                    </b-card>
+                    </v-card>
                 </div>
                 <div class="col-12 col-xl-8">
-                    <b-card class="shadow" no-body border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card-no-body>
                         <template v-slot:header>
                             <h4 class="card-header-title">Conversions</h4>
                             <flat-pickr v-model="date" :config="config"></flat-pickr>
@@ -148,10 +148,10 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </b-card>
+                    </v-card-no-body>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <b-card class="shadow" no-body border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <v-card-no-body>
                         <template v-slot:header>
                             <h4 class="card-header-title">Traffic Channels</h4>
                             <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
@@ -168,7 +168,7 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="@/assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -182,7 +182,7 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="@/assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -196,7 +196,7 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img class="avatar-img rounded-circle" src="@/assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                                            <img class="avatar-img rounded-circle" src="../assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
                                         </div>
                                     </b-media-aside>
                                     <b-media-body>
@@ -207,7 +207,7 @@
                                 </b-media>
                             </b-list-group-item>
                         </b-list-group>
-                    </b-card>
+                    </v-card-no-body>
                 </div>
             </div>
         </div>
@@ -218,10 +218,12 @@
     import LineChart from "@/components/LineChart";
     import VHeader from "@/components/VHeader";
     import SparklineChart from "@/components/SparklineChart";
+    import VCard from "@/components/VCard";
+    import VCardNoBody from "@/components/VCardNoBody";
 
     export default {
         name: "MainContent",
-        components: { SparklineChart, VHeader, LineChart },
+        components: { VCardNoBody, VCard, SparklineChart, VHeader, LineChart },
         data() {
             return {
                 // Initial value
