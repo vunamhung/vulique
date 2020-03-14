@@ -257,30 +257,19 @@
                 },
                 chartOptions: {
                     maintainAspectRatio: false,
-                    legend: {
-                        display: false,
-                    },
                     elements: {
                         line: {
                             borderColor: "#2c7be5",
                             borderWidth: 2,
                         },
-                        point: {
-                            radius: 0,
-                        },
-                    },
-                    tooltips: {
-                        enabled: false,
                     },
                     scales: {
                         x: {
-                            display: true,
                             gridLines: {
                                 display: false,
                             },
                         },
                         y: {
-                            display: true,
                             gridLines: {
                                 borderDash: [5, 5],
                             },
