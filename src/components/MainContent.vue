@@ -67,7 +67,7 @@
                     </b-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <b-card class="shadow bg-conner-1" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
+                    <b-card class="shadow bg-conner-4" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
