@@ -44,24 +44,8 @@
                                 <h6 class="text-uppercase text-muted mb-2">Exit %</h6>
                                 <span class="h2 mb-0">35.5%</span>
                             </div>
-                            <div class="col-auto">
-                                <div class="chart chart-sparkline">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div>
-                                    <canvas
-                                        class="chart-canvas chartjs-render-monitor"
-                                        id="sparklineChart"
-                                        width="150"
-                                        height="70"
-                                        style="display: block; height: 35px; width: 75px;"
-                                    ></canvas>
-                                </div>
+                            <div class="col">
+                                <sparkline-chart :chart-data="chartData" />
                             </div>
                         </div>
                     </b-card>
@@ -83,7 +67,7 @@
             <div class="row">
                 <div class="col-12">
                     <b-card class="shadow" border-variant="gray-200" header-bg-variant="white" header-border-variant="gray-200">
-                        <line-chart />
+                        <line-chart :chart-data="chartData" :chart-options="chartOptions" />
                     </b-card>
                 </div>
                 <div class="col-12 col-xl-8">
@@ -233,10 +217,11 @@
 <script>
     import LineChart from "@/components/LineChart";
     import VHeader from "@/components/VHeader";
+    import SparklineChart from "@/components/SparklineChart";
 
     export default {
         name: "MainContent",
-        components: { VHeader, LineChart },
+        components: { SparklineChart, VHeader, LineChart },
         data() {
             return {
                 // Initial value
@@ -244,6 +229,66 @@
                 // Get more form https://chmln.github.io/flatpickr/options/
                 config: {
                     mode: "range",
+                },
+                chartData: {
+                    labels: [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                        "July",
+                        "August",
+                        "September",
+                        "October",
+                        "November",
+                        "December",
+                    ],
+                    datasets: [
+                        {
+                            label: "GitHub Commits",
+                            fill: false,
+                            data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+                        },
+                    ],
+                },
+                chartOptions: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    },
+                    elements: {
+                        line: {
+                            borderColor: "#2c7be5",
+                            borderWidth: 2,
+                        },
+                        point: {
+                            radius: 0,
+                        },
+                    },
+                    tooltips: {
+                        enabled: false,
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            gridLines: {
+                                display: false,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            gridLines: {
+                                borderDash: [5, 5],
+                            },
+                            ticks: {
+                                callback(value) {
+                                    return `$${value}k`;
+                                },
+                            },
+                        },
+                    },
                 },
             };
         },
