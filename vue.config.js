@@ -11,7 +11,7 @@ module.exports = {
                 importLoaders: 2,
             },
             scss: {
-                prependData: `@import "~bootstrap/scss/functions.scss";@import "~@/assets/scss/_variables.scss";`,
+                prependData: `@import "~bootstrap/scss/functions";@import "~@/assets/scss/variables";`,
             },
         },
     },

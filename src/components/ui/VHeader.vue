@@ -4,7 +4,7 @@
             <div class="header-body">
                 <div class="row align-items-end">
                     <div class="col">
-                        <h6 class="header-pretitle">{{ preTitle }}</h6>
+                        <h6 class="header-pretitle" v-if="preTitle">{{ preTitle }}</h6>
                         <h1 class="header-title mb-0">{{ title }}</h1>
                     </div>
                     <div class="col-auto" v-if="hasToolbarSlot">
@@ -17,7 +17,7 @@
 </template>
 <script>
     export default {
-        name: "v-header",
+        name: "VHeader",
         props: {
             preTitle: {
                 type: String,

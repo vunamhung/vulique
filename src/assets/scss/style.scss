@@ -1,7 +1,5 @@
-@import "~bootstrap/scss/functions";
-@import "variables";
-@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap-vue/src/index";
+@import '~bootstrap';
+@import '~bootstrap-vue';
 @import "type";
 @import "mixins/badge";
 @import "mixins/avatar";

@@ -1,17 +1,12 @@
 <template>
     <div class="main-content">
         <v-header title="Dashboard" pre-title="Overview">
-            <template slot="toolbar">
-                <b-button variant="primary">
-                    <feather size="13" type="target"></feather>
-                    Create report
-                </b-button>
-            </template>
+            <b-button variant="primary" slot="toolbar"> <feather size="15" type="clock"></feather> Create report </b-button>
         </v-header>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="shadow bg-conner-1">
+                    <v-card class="bg-conner-1">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Value</h6>
@@ -25,7 +20,7 @@
                     </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="shadow bg-conner-2">
+                    <v-card class="bg-conner-2">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Total hours</h6>
@@ -38,7 +33,7 @@
                     </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="shadow bg-conner-3">
+                    <v-card class="bg-conner-3">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Exit %</h6>
@@ -51,7 +46,7 @@
                     </v-card>
                 </div>
                 <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="shadow bg-conner-4">
+                    <v-card class="bg-conner-4">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
@@ -71,7 +66,7 @@
                     </v-card>
                 </div>
                 <div class="col-12 col-xl-8">
-                    <v-card-no-body>
+                    <v-card no-body>
                         <template v-slot:header>
                             <h4 class="card-header-title">Conversions</h4>
                             <flat-pickr v-model="date" :config="config"></flat-pickr>
@@ -148,10 +143,10 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </v-card-no-body>
+                    </v-card>
                 </div>
                 <div class="col-12 col-xl-4">
-                    <v-card-no-body>
+                    <v-card no-body>
                         <template v-slot:header>
                             <h4 class="card-header-title">Traffic Channels</h4>
                             <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
@@ -219,7 +214,7 @@
                                 </b-media>
                             </b-list-group-item>
                         </b-list-group>
-                    </v-card-no-body>
+                    </v-card>
                 </div>
             </div>
         </div>
@@ -231,11 +226,10 @@
     import SparklineChart from "@/components/chart/SparklineChart";
     import VCard from "@/components/ui/VCard";
     import VHeader from "@/components/ui/VHeader";
-    import VCardNoBody from "@/components/ui/VCardNoBody";
 
     export default {
         name: "AppContent",
-        components: { VCardNoBody, VCard, SparklineChart, VHeader, LineChart },
+        components: { VCard, SparklineChart, VHeader, LineChart },
         data() {
             return {
                 // Initial value

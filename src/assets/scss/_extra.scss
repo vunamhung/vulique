@@ -1,51 +1,29 @@
-.container-fluid {
-    @include media-breakpoint-up(md) {
-        padding-left: ($main-content-padding-x + $grid-gutter-width / 2);
-        padding-right: ($main-content-padding-x + $grid-gutter-width / 2);
-    }
-}
-
 .border-gray-200 {
     border-color: $gray-200 !important;
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    transition: $transition-base;
-    i {
-        margin-right: 5px;
-    }
-}
-
-i {
-    vertical-align: top;
+%bg-conner {
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 
 .bg-conner-1{
     background-image: url("../img/corner-1.png");
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    @extend %bg-conner;
 }
 
 .bg-conner-2{
     background-image: url("../img/corner-2.png");
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    @extend %bg-conner;
 }
 
 .bg-conner-3{
     background-image: url("../img/corner-3.png");
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    @extend %bg-conner;
 }
 
 .bg-conner-4{
     background-image: url("../img/corner-4.png");
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    @extend %bg-conner;
 }

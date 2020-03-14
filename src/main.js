@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueFeather from "vue-feather";
-import BootstrapVue from "bootstrap-vue";
+import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 import VueFlatPickr from "vue-flatpickr-component";
 import "flatpickr/dist/flatpickr.css";
@@ -11,6 +11,7 @@ import "@/utilities/focusRing";
 import "@/assets/scss/style.scss";
 
 Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 Vue.use(VueFeather);
 Vue.use(VueFlatPickr);
 

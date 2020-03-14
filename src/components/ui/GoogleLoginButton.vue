@@ -36,13 +36,13 @@
 <style lang="scss">
     .google-button {
         height: 50px;
-        background-color: #4285f4;
-        border: 1px solid #4285f4;
-        color: #fff;
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $white;
         white-space: nowrap;
         overflow: hidden;
         padding: 0;
-        transition: all 0.3s;
+        transition: $transition-base;
         &:hover,
         &:focus {
             box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
@@ -51,7 +51,7 @@
             width: 18px;
             height: 18px;
             padding: 15px;
-            background-color: #fff;
+            background-color: $white;
             border-radius: 1px;
         }
         &__text {
