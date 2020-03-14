@@ -38,10 +38,3 @@
         },
     };
 </script>
-
-<style scoped>
-    canvas {
-        max-width: 100%;
-        max-height: 50px;
-    }
-</style>

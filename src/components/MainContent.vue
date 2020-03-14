@@ -45,7 +45,7 @@
                                 <span class="h2 mb-0">35.5%</span>
                             </div>
                             <div class="col">
-                                <sparkline-chart :chart-data="chartData" />
+                                <sparkline-chart width="100" height="50" :chart-data="chartData" />
                             </div>
                         </div>
                     </v-card>
