@@ -1,6 +1,7 @@
 module.exports = {
-    lintOnSave: undefined,
+    lintOnSave: "warning",
     productionSourceMap: false,
+    transpileDependencies: [/\bvue-awesome\b/],
     configureWebpack: {
         devtool: "eval-source-map",
     },
