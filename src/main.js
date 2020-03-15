@@ -1,24 +1,11 @@
 import Vue from "vue";
 import App from "./App";
 
-import Icon from "vue-awesome/components/Icon";
-import VueFeather from "vue-feather";
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
-
-import VueFlatPickr from "vue-flatpickr-component";
-import "flatpickr/dist/flatpickr.css";
-
-import "@/utilities/icons";
-import "@/utilities/focusRing";
-
+import "@/components/ui";
+import "@/plugins";
+import "@/utilities";
+import "@/icons";
 import "@/assets/scss/style.scss";
-
-Vue.use(BootstrapVue);
-Vue.use(IconsPlugin);
-Vue.use(VueFeather);
-Vue.use(VueFlatPickr);
-
-Vue.component("v-icon", Icon);
 
 Vue.config.productionTip = false;
 

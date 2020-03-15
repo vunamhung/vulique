@@ -224,12 +224,10 @@
 <script>
     import LineChart from "@/components/chart/LineChart";
     import SparklineChart from "@/components/chart/SparklineChart";
-    import VCard from "@/components/ui/VCard";
-    import VHeader from "@/components/ui/VHeader";
 
     export default {
         name: "AppContent",
-        components: { VCard, SparklineChart, VHeader, LineChart },
+        components: { SparklineChart, LineChart },
         data() {
             return {
                 // Initial value
