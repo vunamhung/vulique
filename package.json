@@ -13,14 +13,16 @@
     "chart.js": "^3.0.0-alpha",
     "core-js": "^3.6.4",
     "feather-icons": "^4.26.0",
+    "lodash": "latest",
     "vue": "^2.6.11",
     "vue-awesome": "^4.0.2",
     "vue-chartjs": "^3.5.0",
     "vue-feather": "^1.0.0",
-    "vue-flatpickr-component": "^8.1.5",
-    "lodash": "latest"
+    "vue-flatpickr-component": "^8.1.5"
   },
   "devDependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.2",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
