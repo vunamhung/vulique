@@ -1,27 +1,18 @@
-<template>
-    <div class="card shadow border-gray-200">
-        <div class="card-header bg-white border-gray-200" v-if="hasHeaderSlot">
-            <slot name="header" />
-        </div>
-        <slot v-if="noBody" />
-        <div class="card-body" v-else>
-            <slot />
-        </div>
-    </div>
-</template>
-
 <script>
+    import { BCard } from "bootstrap-vue";
+
     export default {
+        extends: BCard,
         name: "VCard",
         props: {
-            noBody: {
-                type: Boolean,
-                default: false,
+            headerBgVariant: {
+                default: "white",
             },
-        },
-        computed: {
-            hasHeaderSlot() {
-                return this.$slots.header;
+            headerBorderVariant: {
+                default: "gray-200",
+            },
+            borderVariant: {
+                default: "gray-200",
             },
         },
     };

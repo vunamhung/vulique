@@ -3,73 +3,75 @@
         <v-header title="Dashboard" pre-title="Overview">
             <b-button variant="primary" slot="toolbar"> <feather size="15" type="clock"></feather> Create report </b-button>
         </v-header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="bg-conner-1">
-                        <div class="row align-items-center">
-                            <div class="col">
+        <b-container>
+            <b-row cols="1" cols-md="2" cols-lg="4">
+                <b-col>
+                    <v-card class="shadow bg-conner-1">
+                        <b-row align-v="center">
+                            <b-col>
                                 <h6 class="text-uppercase text-muted mb-2">Value</h6>
                                 <span class="h2 mb-0">$24,500</span>
                                 <span class="badge badge-soft-success mt-n1 ml-1">+3.5%</span>
-                            </div>
-                            <div class="col-auto">
+                            </b-col>
+                            <b-col cols="auto">
                                 <feather class="text-muted" size="20" type="dollar-sign"></feather>
-                            </div>
-                        </div>
+                            </b-col>
+                        </b-row>
                     </v-card>
-                </div>
-                <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="bg-conner-2">
-                        <div class="row align-items-center">
-                            <div class="col">
+                </b-col>
+                <b-col>
+                    <v-card class="shadow bg-conner-2">
+                        <b-row align-v="center">
+                            <b-col>
                                 <h6 class="text-uppercase text-muted mb-2">Total hours</h6>
                                 <span class="h2 mb-0">763.5</span>
-                            </div>
-                            <div class="col-auto">
+                            </b-col>
+                            <b-col cols="auto">
                                 <feather class="text-muted" size="20" type="briefcase"></feather>
-                            </div>
-                        </div>
+                            </b-col>
+                        </b-row>
                     </v-card>
-                </div>
-                <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="bg-conner-3">
-                        <div class="row align-items-center">
-                            <div class="col">
+                </b-col>
+                <b-col>
+                    <v-card class="shadow bg-conner-3">
+                        <b-row align-v="center">
+                            <b-col>
                                 <h6 class="text-uppercase text-muted mb-2">Exit %</h6>
                                 <span class="h2 mb-0">35.5%</span>
-                            </div>
-                            <div class="col">
+                            </b-col>
+                            <b-col>
                                 <sparkline-chart width="100" height="50" :chart-data="chartData" />
-                            </div>
-                        </div>
+                            </b-col>
+                        </b-row>
                     </v-card>
-                </div>
-                <div class="col-12 col-lg-6 col-xl">
-                    <v-card class="bg-conner-4">
-                        <div class="row align-items-center">
-                            <div class="col">
+                </b-col>
+                <b-col>
+                    <v-card class="shadow bg-conner-4">
+                        <b-row align-v="center">
+                            <b-col class="col">
                                 <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
                                 <span class="h2 mb-0">2:37</span>
-                            </div>
-                            <div class="col-auto">
+                            </b-col>
+                            <b-col cols="auto">
                                 <feather class="text-muted" size="20" type="clock"></feather>
-                            </div>
-                        </div>
+                            </b-col>
+                        </b-row>
                     </v-card>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <v-card>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col>
+                    <v-card class="shadow">
                         <line-chart :chart-data="chartData" :chart-options="chartOptions" />
                     </v-card>
-                </div>
-                <div class="col-12 col-xl-8">
-                    <v-card no-body>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col xl="8">
+                    <v-card class="shadow" no-body>
                         <template v-slot:header>
-                            <h4 class="card-header-title">Conversions</h4>
-                            <flat-pickr v-model="date" :config="config"></flat-pickr>
+                            <h4 class="mb-0">Conversions</h4>
+                            <flat-pickr v-model="date" :config="config" />
                         </template>
                         <table class="table table-sm table-nowrap card-table">
                             <thead>
@@ -144,11 +146,11 @@
                             </tbody>
                         </table>
                     </v-card>
-                </div>
-                <div class="col-12 col-xl-4">
-                    <v-card no-body>
+                </b-col>
+                <b-col xl="4">
+                    <v-card class="shadow" no-body>
                         <template v-slot:header>
-                            <h4 class="card-header-title">Traffic Channels</h4>
+                            <h4 class="mb-0">Traffic Channels</h4>
                             <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active" data-toggle="tab">All</a>
@@ -215,9 +217,9 @@
                             </b-list-group-item>
                         </b-list-group>
                     </v-card>
-                </div>
-            </div>
-        </div>
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
