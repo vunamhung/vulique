@@ -5,11 +5,8 @@ module.exports = {
         devtool: "eval-source-map",
     },
     css: {
+        sourceMap: true,
         loaderOptions: {
-            css: {
-                sourceMap: true,
-                importLoaders: 2,
-            },
             scss: {
                 prependData: `@import "~bootstrap/scss/functions";@import "~@/assets/scss/variables";`,
             },
