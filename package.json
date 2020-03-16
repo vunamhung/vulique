@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "svg": "vsvg -s ./static/svg -t ./src/icons --es6"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -15,10 +16,10 @@
     "feather-icons": "^4.26.0",
     "lodash": "latest",
     "vue": "^2.6.11",
-    "vue-awesome": "^4.0.2",
     "vue-chartjs": "^3.5.0",
     "vue-feather": "^1.0.0",
-    "vue-flatpickr-component": "^8.1.5"
+    "vue-flatpickr-component": "^8.1.5",
+    "vue-svgicon": "^3.2.6"
   },
   "devDependencies": {
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",

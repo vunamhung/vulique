@@ -1,7 +1,7 @@
 <template>
     <button class="google-button">
         <span class="google-button__icon">
-            <v-icon name="google"></v-icon>
+            <svgicon name="google" width="18" height="18" />
         </span>
         <span class="google-button__text">Sign in with Google</span>
     </button>
