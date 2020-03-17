@@ -357,16 +357,18 @@ $hr-margin-y:                 $spacer;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding: .9375rem;
-$table-cell-padding-sm: .9375rem;
+$table-cell-padding:          .9375rem;
+$table-cell-padding-sm:       .9375rem;
 
-$table-accent-bg: $gray-100;
-$table-hover-bg: $gray-100;
+$table-accent-bg:             $gray-100;
+$table-hover-bg:              $gray-100;
 
-$table-border-color: $gray-200;
+$table-border-color:          $gray-200;
 
-$table-head-bg: $gray-100;
-$table-head-color: $text-muted;
+$table-head-bg:               $gray-100;
+$table-head-color:            $text-muted;
+
+$table-striped-order:         even;
 
 
 // Buttons + Forms
@@ -969,7 +971,7 @@ $modal-content-inner-border-radius: subtract($modal-content-border-radius, $moda
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5);
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5);
 
-$modal-backdrop-bg:                 $black;
+$modal-backdrop-bg:                 rgba($black, .3);
 $modal-backdrop-opacity:            .5;
 $modal-header-border-color:         $border-color;
 $modal-footer-border-color:         $modal-header-border-color;
