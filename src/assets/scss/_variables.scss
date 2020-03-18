@@ -134,7 +134,7 @@ $enable-deprecation-messages:                 true;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1.5rem;
+$spacer: 1rem;
 $spacers: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
@@ -285,11 +285,12 @@ $font-family-base:            "Cerebri Sans", sans-serif;
 
 $font-size-base:              0.9375rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25;
-$font-size-sm:                $font-size-base * .875;
+$font-size-sm:                $font-size-base * .9;
 
 $font-weight-lighter:         lighter;
 $font-weight-light:           300;
 $font-weight-normal:          400;
+$font-weight-semibold:        500;
 $font-weight-bold:            700;
 $font-weight-bolder:          bolder;
 
@@ -310,7 +311,7 @@ $h6-font-size:                0.625rem;
 
 $headings-margin-bottom:      $spacer / 2;
 $headings-font-family:        null;
-$headings-font-weight:        500;
+$headings-font-weight:        700;
 $headings-line-height:        1.2;
 $headings-color:              null;
 
@@ -369,7 +370,6 @@ $table-head-bg:               $gray-100;
 $table-head-color:            $text-muted;
 
 $table-striped-order:         even;
-
 
 // Buttons + Forms
 //
@@ -828,7 +828,7 @@ $list-group-item-padding-y-lg: $spacer;
 
 // Cards
 
-$card-header-min-height: 3.75rem;
+$card-header-min-height: 3.2rem;
 $card-box-shadow: 0 .75rem 1.5rem transparentize($black, .97);
 
 $card-spacer-y:                     1rem;
@@ -934,7 +934,7 @@ $toast-header-border-color:         rgba(0, 0, 0, .05);
 $badge-soft-bg-level: -10;
 $badge-padding-x: .5em;
 
-$badge-font-size:                   75%;
+$badge-font-size:                   85%;
 $badge-font-weight:                 $font-weight-normal;
 $badge-padding-y:                   .25em;
 $badge-padding-x:                   .4em;
@@ -964,7 +964,7 @@ $modal-title-line-height:           $line-height-base;
 
 $modal-content-color:               null;
 $modal-content-bg:                  $white;
-$modal-content-border-color:        rgba($black, .2);
+$modal-content-border-color:        $gray-200;
 $modal-content-border-width:        $border-width;
 $modal-content-border-radius:       $border-radius-lg;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
@@ -1147,9 +1147,3 @@ $pre-scrollable-max-height:         340px;
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex;
 $overflows: auto, hidden;
 $positions: static, relative, absolute, fixed, sticky;
-
-
-// Printing
-
-$print-page-size:                   a3;
-$print-body-min-width:              map-get($grid-breakpoints, "lg");

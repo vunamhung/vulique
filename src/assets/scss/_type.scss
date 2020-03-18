@@ -5,7 +5,6 @@
 h1, .h1 {
     margin-bottom: $headings-margin-bottom;
     font-size: 1.5rem;
-
     @include media-breakpoint-up(md) {
         font-size: $h1-font-size;
     }
@@ -34,7 +33,6 @@ h6, .h6 {
 // Links
 
 h1, h2, h3, h4, h5, h6 {
-
     > a {
         color: inherit;
     }
@@ -62,7 +60,7 @@ h6.text-uppercase {
 // Bold, strong
 
 b, strong {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-semibold;
 }
 
 
@@ -71,7 +69,6 @@ b, strong {
 // Removes focus outline
 
 a, button {
-
     &:focus {
         outline: none !important;
     }
@@ -81,24 +78,47 @@ a, button {
 
 @font-face {
     font-family: 'Cerebri Sans';
-    src: url('../fonts/cerebrisans/cerebrisans-regular.eot');
-    src: url('../fonts/cerebrisans/cerebrisans-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebrisans/cerebrisans-regular.woff') format('woff'), url('../fonts/cerebrisans/cerebrisans-regular.ttf') format('truetype');
+    src: url('../fonts/cerebri-sans/CerebriSans-Light.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-Light.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('../fonts/cerebri-sans/CerebriSans-Regular.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-Regular.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cerebri Sans';
-    src: url('../fonts/cerebrisans/cerebrisans-medium.eot');
-    src: url('../fonts/cerebrisans/cerebrisans-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebrisans/cerebrisans-medium.woff') format('woff'), url('../fonts/cerebrisans/cerebrisans-medium.ttf') format('truetype');
+    src: url('../fonts/cerebri-sans/CerebriSans-Medium.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-Medium.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('../fonts/cerebri-sans/CerebriSans-MediumItalic.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-MediumItalic.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url('../fonts/cerebri-sans/CerebriSans-Bold.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-Bold.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cerebri Sans';
-    src: url('../fonts/cerebrisans/cerebrisans-semibold.eot');
-    src: url('../fonts/cerebrisans/cerebrisans-semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebrisans/cerebrisans-semibold.woff') format('woff'), url('../fonts/cerebrisans/cerebrisans-semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+    src: url('../fonts/cerebri-sans/CerebriSans-BoldItalic.eot');
+    src: url('../fonts/cerebri-sans/CerebriSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/cerebri-sans/CerebriSans-BoldItalic.woff') format('woff'), url('../fonts/cerebri-sans/CerebriSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
