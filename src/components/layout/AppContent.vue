@@ -1,7 +1,7 @@
 <template>
     <div class="main-content">
         <v-header title="Dashboard" pre-title="Overview">
-            <b-button variant="primary" slot="toolbar"> <feather size="15" type="clock"></feather> Create report </b-button>
+            <b-button variant="primary" slot="toolbar"> <feather size="15" type="clock" /> Create report </b-button>
         </v-header>
         <b-container>
             <b-row cols="1" cols-md="2" cols-lg="4">
@@ -69,96 +69,23 @@
             <b-row>
                 <b-col xl="8">
                     <v-card class="shadow" no-body>
-                        <template v-slot:header>
+                        <template #header>
                             <h4 class="mb-0">Conversions</h4>
                             <flat-pickr v-model="date" :config="config" />
                         </template>
-                        <table class="table table-sm table-nowrap card-table">
-                            <thead>
-                                <tr>
-                                    <th>Goal</th>
-                                    <th>Status</th>
-                                    <th>Progress</th>
-                                    <th>Due date</th>
-                                </tr>
-                            </thead>
-                            <tbody class="list">
-                                <tr>
-                                    <td class="goal-project">
-                                        Update the API
-                                    </td>
-                                    <td class="goal-status"><span class="text-warning">●</span> In progress</td>
-                                    <td class="goal-progress">
-                                        55%
-                                    </td>
-                                    <td class="goal-date">
-                                        <time datetime="2018-10-24">07/24/18</time>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="goal-project">
-                                        Release v1.2-Beta
-                                    </td>
-                                    <td class="goal-status"><span class="text-warning">●</span> In progress</td>
-                                    <td class="goal-progress">
-                                        25%
-                                    </td>
-                                    <td class="goal-date">
-                                        <time datetime="2018-10-24">08/26/18</time>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="goal-project">
-                                        GDPR Compliance
-                                    </td>
-                                    <td class="goal-status"><span class="text-success">●</span> Completed</td>
-                                    <td class="goal-progress">
-                                        100%
-                                    </td>
-                                    <td class="goal-date">
-                                        <time datetime="2018-10-24">06/19/18</time>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="goal-project">
-                                        v1.2 Documentation
-                                    </td>
-                                    <td class="goal-status"><span class="text-danger">●</span> Cancelled</td>
-                                    <td class="goal-progress">
-                                        0%
-                                    </td>
-                                    <td class="goal-date">
-                                        <time datetime="2018-10-24">06/25/18</time>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="goal-project">
-                                        Plan design offsite
-                                    </td>
-                                    <td class="goal-status"><span class="text-success">●</span> Completed</td>
-                                    <td class="goal-progress">
-                                        100%
-                                    </td>
-                                    <td class="goal-date">
-                                        <time datetime="2018-10-24">06/30/18</time>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <b-table striped hover responsive caption-top small :items="items" class="card-table">
+                            <template #table-caption>This is a table caption at the top.</template>
+                        </b-table>
                     </v-card>
                 </b-col>
                 <b-col xl="4">
                     <v-card class="shadow" no-body>
-                        <template v-slot:header>
+                        <template #header>
                             <h4 class="mb-0">Traffic Channels</h4>
-                            <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active" data-toggle="tab">All</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" data-toggle="tab">Direct</a>
-                                </li>
-                            </ul>
+                            <b-nav card-header tabs>
+                                <b-nav-item active>Active</b-nav-item>
+                                <b-nav-item>Inactive</b-nav-item>
+                            </b-nav>
                         </template>
                         <b-list-group class="list-group-activity" flush>
                             <b-list-group-item>
@@ -232,6 +159,12 @@
         components: { SparklineChart, LineChart },
         data() {
             return {
+                items: [
+                    { age: 40, first_name: "Dickerson", last_name: "Macdonald" },
+                    { age: 21, first_name: "Larsen", last_name: "Shaw" },
+                    { age: 89, first_name: "Geneva", last_name: "Wilson" },
+                    { age: 38, first_name: "Jami", last_name: "Carney" },
+                ],
                 // Initial value
                 date: new Date(),
                 // Get more form https://chmln.github.io/flatpickr/options/
