@@ -3,12 +3,13 @@
   "env": {
     "node": true
   },
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "plugin:vue/essential",
     "eslint:recommended"
   ],
   "parserOptions": {
-    "parser": "babel-eslint"
+    "parser": "@typescript-eslint/parser"
   },
   "rules": {
     "vue/no-unused-components": 1,
@@ -29,7 +30,7 @@
     "no-prototype-builtins": 1,
     "no-eval": 1,
     "prefer-spread": 1,
-    "no-unused-vars": 1,
+    "no-unused-vars": 0,
     "no-param-reassign": 1,
     "prefer-arrow-callback": 1,
     "no-confusing-arrow": 1,
