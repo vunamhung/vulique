@@ -8,3 +8,4 @@ const helper = {
 };
 
 Vue.prototype.$helper = helper;
+Vue.prototype.$log = console.log;
