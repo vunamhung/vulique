@@ -3,3 +3,21 @@
         @include badge-variant-soft(theme-color-level($color, $badge-soft-bg-level), $value);
     }
 }
+
+.btn {
+    justify-content: center;
+}
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color}-busy {
+        background-image: linear-gradient(-45deg, $value 28%, darken($value, 20) 28%, darken($value, 20) 72%, $value 72%);
+        color: $white;
+        border-color: transparent;
+        animation: components-button__busy-animation 2500ms infinite linear;
+    }
+}
+@keyframes components-button__busy-animation {
+    0% {
+        background-position: 200px 0;
+    }
+}
