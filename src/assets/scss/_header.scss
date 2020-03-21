@@ -18,7 +18,7 @@
 }
 
 .header.bg-dark .header-body {
-    border-bottom-color: fade-out($header-body-border-color, .9);
+    border-bottom-color: fade-out($header-body-border-color, 0.9);
 }
 
 .header-footer {
@@ -28,7 +28,7 @@
 
 .header-pretitle {
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     color: $text-muted;
 }
 

@@ -3,31 +3,31 @@
 // This is a custom mixin for generating avatar component sizes
 
 @mixin avatar($avatarSize, $borderWidth, $borderRadius, $fontSize, $statusBorderWidth) {
-  width: $avatarSize;
-  height: $avatarSize;
+    width: $avatarSize;
+    height: $avatarSize;
 
-  // Bordered version
+    // Bordered version
 
-  .border {
-    border-width: $borderWidth !important;
-  }
+    .border {
+        border-width: $borderWidth !important;
+    }
 
-  // Rounded version
+    // Rounded version
 
-  .rounded {
-    border-radius: $borderRadius !important;
-  }
+    .rounded {
+        border-radius: $borderRadius !important;
+    }
 
-  // Title
+    // Title
 
-  .avatar-title {
-    font-size: $fontSize;
-  }
+    .avatar-title {
+        font-size: $fontSize;
+    }
 
-  // Status
+    // Status
 
-  &.avatar-online::before,
-  &.avatar-offline::before {
-    border-width: $statusBorderWidth;
-  }
+    &.avatar-online::before,
+    &.avatar-offline::before {
+        border-width: $statusBorderWidth;
+    }
 }

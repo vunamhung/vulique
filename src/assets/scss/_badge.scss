@@ -3,17 +3,17 @@
 //
 
 .badge {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 // Quick fix for badges in buttons
 .btn .badge {
-  top: -2px;
+    top: -2px;
 }
 
 // Creates the "soft" badge variant
 @each $color, $value in $theme-colors {
-  .badge-soft-#{$color} {
-    @include badge-variant-soft(theme-color-level($color, $badge-soft-bg-level), $value);
-  }
+    .badge-soft-#{$color} {
+        @include badge-variant-soft(theme-color-level($color, $badge-soft-bg-level), $value);
+    }
 }

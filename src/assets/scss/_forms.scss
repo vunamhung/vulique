@@ -166,7 +166,6 @@
     }
 }
 
-
 // Flatpickr
 //
 // Flatpickr plugin overrides
@@ -180,13 +179,13 @@
     }
 
     .flatpickr-months {
-        padding-top: .625rem;
-        padding-bottom: .625rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
     }
 
     .flatpickr-prev-month,
     .flatpickr-next-month {
-        top: .625rem;
+        top: 0.625rem;
     }
 
     .flatpickr-current-month {
@@ -214,5 +213,4 @@
         border-color: $primary;
         color: white !important;
     }
-
 }

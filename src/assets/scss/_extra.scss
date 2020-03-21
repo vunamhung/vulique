@@ -8,22 +8,22 @@
     background-repeat: no-repeat;
 }
 
-.bg-conner-1{
+.bg-conner-1 {
     background-image: url("../img/corner-1.png");
     @extend %bg-conner;
 }
 
-.bg-conner-2{
+.bg-conner-2 {
     background-image: url("../img/corner-2.png");
     @extend %bg-conner;
 }
 
-.bg-conner-3{
+.bg-conner-3 {
     background-image: url("../img/corner-3.png");
     @extend %bg-conner;
 }
 
-.bg-conner-4{
+.bg-conner-4 {
     background-image: url("../img/corner-4.png");
     @extend %bg-conner;
 }

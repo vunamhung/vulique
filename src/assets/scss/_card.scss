@@ -20,9 +20,8 @@
 }
 
 .card-title {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
-
 
 // Card header
 //
@@ -42,7 +41,6 @@
     padding-bottom: calc((#{$card-header-min-height} - 1em * #{$line-height-base}) / 2) !important;
 }
 
-
 // Card table
 //
 // Make sure the card table content is aligned with the rest of the
@@ -53,7 +51,8 @@
     thead th {
         border-top-width: 0;
     }
-    thead th, tbody td {
+    thead th,
+    tbody td {
         &:first-child {
             padding-left: $card-spacer-x !important;
         }
@@ -62,7 +61,6 @@
         }
     }
 }
-
 
 // Card avatar
 //
@@ -99,7 +97,6 @@
     margin-top: -($card-spacer-x + $avatar-size-xxl / 2);
 }
 
-
 // Card dropdown
 //
 // Places dropdowns in the top right corner
@@ -109,7 +106,6 @@
     top: $card-spacer-x;
     right: $card-spacer-x;
 }
-
 
 // Card inactive
 
