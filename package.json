@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.6.1",
+    "bootstrap-vue": "2.7.0",
     "chart.js": "^3.0.0-alpha",
     "core-js": "^3.6.4",
     "feather-icons": "^4.26.0",
