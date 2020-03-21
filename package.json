@@ -47,8 +47,5 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{vue,js,scss,html,ts,tsx}": "prettier --write"
   }
 }
