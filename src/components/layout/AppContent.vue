@@ -92,8 +92,9 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img
-                                                class="avatar-img rounded-circle"
+                                            <b-img
+                                                rounded="circle"
+                                                class="avatar-img"
                                                 src="../../assets/img/avatars/profiles/avatar-1.jpg"
                                                 alt="..."
                                             />
@@ -110,8 +111,9 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img
-                                                class="avatar-img rounded-circle"
+                                            <b-img
+                                                rounded="circle"
+                                                class="avatar-img"
                                                 src="../../assets/img/avatars/profiles/avatar-2.jpg"
                                                 alt="..."
                                             />
@@ -128,8 +130,9 @@
                                 <b-media no-body>
                                     <b-media-aside class="mr-2">
                                         <div class="avatar avatar-sm avatar-online">
-                                            <img
-                                                class="avatar-img rounded-circle"
+                                            <b-img
+                                                rounded="circle"
+                                                class="avatar-img"
                                                 src="../../assets/img/avatars/profiles/avatar-3.jpg"
                                                 alt="..."
                                             />
