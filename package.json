@@ -20,7 +20,8 @@
     "vue-feather": "^1.0.0",
     "vue-flatpickr-component": "^8.1.5",
     "vue-svgicon": "^3.2.6",
-    "vue-textarea-autosize": "^1.1.1"
+    "vue-textarea-autosize": "^1.1.1",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.24.0",
