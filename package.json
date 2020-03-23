@@ -17,6 +17,7 @@
     "lodash": "^4.17.15",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
+    "vue-color": "^2.7.1",
     "vue-feather": "^1.0.0",
     "vue-flatpickr-component": "^8.1.5",
     "vue-svgicon": "^3.2.6",
